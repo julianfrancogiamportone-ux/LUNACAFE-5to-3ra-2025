@@ -1,9 +1,12 @@
 package oriseba.Lunacafe.entity;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 
 @Entity
 public class Empleado {
@@ -15,6 +18,10 @@ public class Empleado {
 	private String email;
 	private String url_imagen;
 	
+//Relaciones
+	@OneToMany(mappedBy = "empleado")
+	private List<Pedido> pedido;
+
 //Constructors
 	public Empleado(Long id, String nombre, String rol, String email, String url_imagen) {
 		super();

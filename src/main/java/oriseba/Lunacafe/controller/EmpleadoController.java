@@ -32,7 +32,7 @@ public class EmpleadoController {
 	public Optional<Empleado> getEmpleadoById(@PathVariable Long id) {
 		return iempleadoService.findAllEmpleadoById(id);
 	}
-	
+	 
 	@PostMapping 
 	public Empleado createEmpleado(@RequestBody Empleado empleado) {
 		return iempleadoService.saveEmpleado(empleado);
