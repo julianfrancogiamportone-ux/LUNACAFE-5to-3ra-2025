@@ -1,4 +1,4 @@
-package oriseba.Lunacafe.repository;
+package oriseba.Lunacafe.Repositorio;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

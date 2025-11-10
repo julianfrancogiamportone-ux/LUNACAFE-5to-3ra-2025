@@ -1,4 +1,4 @@
-package oriseba.Lunacafe.controller;
+package oriseba.Lunacafe.Controller;
 
 import java.util.List;
 import java.util.Optional;
